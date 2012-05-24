@@ -2,6 +2,6 @@
   "class": "Manager",
   "parentClass": "GameObject",
   "sprite": "manager",
-  "__CODE": "I.sprite = Sprite.NONE",
+  "__CODE": "I.sprite = Sprite.NONE\n\nself.on 'update', ->\n  Collision.collide 'Player', '.exit', ->\n    engine.nextLevel()",
   "uuid": "manager"
 }

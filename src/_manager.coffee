@@ -6,12 +6,16 @@ Manager = (I={}) ->
     "class": "Manager",
     "parentClass": "GameObject",
     "sprite": "manager",
-    "__CODE": "I.sprite = Sprite.NONE",
+    "__CODE": "I.sprite = Sprite.NONE\n\nself.on 'update', ->\n  Collision.collide 'Player', '.exit', ->\n    engine.nextLevel()",
     "uuid": "manager"
   }
 
   self = GameObject(I)
 
   I.sprite = Sprite.NONE
+  
+  self.on 'update', ->
+    Collision.collide 'Player', '.exit', ->
+      engine.nextLevel()
 
   return self
