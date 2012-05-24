@@ -6,12 +6,12 @@ Manager = (I={}) ->
     "class": "Manager",
     "parentClass": "GameObject",
     "sprite": "manager",
-    "__CODE": "",
+    "__CODE": "I.sprite = Sprite.NONE",
     "uuid": "manager"
   }
 
   self = GameObject(I)
 
-  
+  I.sprite = Sprite.NONE
 
   return self
