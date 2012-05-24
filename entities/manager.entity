@@ -1,0 +1,7 @@
+{
+  "class": "Manager",
+  "parentClass": "GameObject",
+  "sprite": "manager",
+  "__CODE": "",
+  "uuid": "manager"
+}
