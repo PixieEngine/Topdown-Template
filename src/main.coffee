@@ -4,11 +4,12 @@ gameKeys
 window.engine = Engine
   backgroundColor: 'white'
   canvas: $("canvas").pixieCanvas()
-  includedModules: ["Levels", "Tilemap"]
   levels: [
     "start"
     "end"
   ]
+
+engine.include 'Engine.Levels', 'Engine.Tilemap'
     
 window.title = App.name
 
