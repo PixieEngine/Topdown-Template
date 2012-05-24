@@ -1,7 +1,6 @@
 {
   "sprite": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAALklEQVRYhe3OMQEAMAyAMFr/njcZfYIBMtXrsL2cAwAAAAAAAAAAAAAAAAAAVH0hEgE/1YngfwAAAABJRU5ErkJggg==",
   "uuid": "block",
-  "solid": false,
-  "__CODE": "",
-  "exit": true
+  "solid": true,
+  "__CODE": ""
 }
