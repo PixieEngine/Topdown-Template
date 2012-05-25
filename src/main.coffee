@@ -13,7 +13,7 @@ window.engine = Engine
 
 engine.include 'Engine.Levels', 'Engine.Tilemap'
     
-engine.bind 'update', ->
+engine.on 'update', ->
   if justPressed['esc']
     engine.nextLevel()
 
