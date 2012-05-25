@@ -3,8 +3,6 @@
 # Modify the entity that generated it instead!
 Background = (I={}) ->
   Object.reverseMerge I, {
-    "height": 6,
-    "width": 6,
     "class": "Background",
     "sprite": "background",
     "__CODE": "self.off 'draw'\nself.on 'draw', (canvas) ->\n  I.sprite.fill(canvas, -16, -16, App.width, App.height)",
