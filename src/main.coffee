@@ -14,8 +14,7 @@ window.engine = Engine
 engine.include 'Engine.Levels', 'Engine.Tilemap'
     
 engine.on 'update', ->
-  if justPressed['esc']
-    engine.nextLevel()
+  engine.nextLevel() if justPressed['esc']
 
 engine.setState TitleScreen({fontColor: 'black'})
 engine.start()
