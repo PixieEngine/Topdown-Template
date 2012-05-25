@@ -6,7 +6,7 @@ Player = (I={}) ->
     "class": "Player",
     "uuid": "player",
     "speed": 60,
-    "__CODE": "self.include 'Controllable', 'CollisionResponse', 'Clampable', 'Debuggable'\n\nself.debug\n  filter: 'changed'\n  bounds: false\n\nself.clampToBounds()\n\nself.bind 'update', ->\n  I.hflip = I.facing.x < 0\n",
+    "__CODE": "self.include 'Controllable', 'CollisionResponse', 'Clampable', 'Debuggable'\n\nself.debug\n  filter: 'changed'\n  bounds: false\n\nself.clampToBounds()\n\nself.on 'update', ->\n  I.hflip = I.facing.x < 0\n",
     "sprite": "raptor"
   }
 
@@ -20,7 +20,7 @@ Player = (I={}) ->
   
   self.clampToBounds()
   
-  self.bind 'update', ->
+  self.on 'update', ->
     I.hflip = I.facing.x < 0
   
 
