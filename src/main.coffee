@@ -1,6 +1,8 @@
 gameKeys
   Movement: "Arrow Keys"
   
+window.title = App.name
+  
 window.engine = Engine
   backgroundColor: 'white'
   canvas: $("canvas").pixieCanvas()
@@ -11,8 +13,6 @@ window.engine = Engine
 
 engine.include 'Engine.Levels', 'Engine.Tilemap'
     
-window.title = App.name
-
 engine.bind 'update', ->
   if justPressed['esc']
     engine.nextLevel()
