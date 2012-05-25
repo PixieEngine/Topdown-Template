@@ -17,8 +17,6 @@ engine.bind 'update', ->
   if justPressed['esc']
     engine.nextLevel()
 
-engine.setState(TitleScreen
-  fontColor: 'black'
-)
+engine.setState TitleScreen({ fontColor: 'black' })
 
 engine.start()
